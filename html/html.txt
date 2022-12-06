@@ -1,0 +1,25 @@
+Tajemný kód webových stránek
+
+Jazyk HTML
+
+Webovou stránku, kterou nám prohlížeče ukazují ve více či méně úhledné grafické podobě, ve skutečnosti tvoří nepříliš atraktivní text napsaný v tajemném jazyce HTML (HyperText Markup Language). Jak naznačuje uvedené anglické vysvětlení zkratky, jde o tzv. značkovací jazyk, který pomocí speciálních značek (anglicky tags), uzavřených mezi symboly <>, blíže určuje význam jednotlivých částí webové stránky. Kupříkladu značka <h1> uvádí hlavní nadpis stránky, značka <p> odstavec a pomocí značky <img> můžeme na stránku vložit obrázek. Kód HTML každé webové stránky si můžeme zobrazit obvykle po kliknutí pravým tlačítkem myši do okna prohlížeče a volbou příkazu Zobrazit zdrojový text z místní nabídky, nebo ještě rychleji klávesovou zkratkou CTRL+U.
+
+Párové a nepárové značky
+
+Většinu elementů stránky tvoří párové značky, protože obklopují určitý textový obsah: např. <h1>Toto je hlavní nadpis stránky</h1>. Jistě jste si všimli, že ukončovací značka obsahuje navíc lomítko. Mezi nepárové značky patří třeba už zmíněná značka <img> pro zobrazení obrázků nebo značka <hr>, která vykresluje vodorovnou rozdělovací linku. Značky zapisujeme malými písmeny a pomocí odřádkování i odsazování  usilujeme o to, aby byl kód HTML co nejpřehlednější.
+
+Atributy
+
+Součástí značek mohou být tzv. atributy. Slouží k specifikaci některých důležitých vlastností jednotlivých elementů. Například v případě obrázků je nezbytné v atributu src udat přesnou adresu souboru obrázku (včetně cesty a názvu) a do atributu alt uvést stručný popis obrázku (<img src="/static/img/core-img/skola-logo.png" alt="Logo školy">). V případě párových elementů píšeme atributy vždy do úvodní značky.
+
+Entity
+
+Na některých místech se v HTML setkáme se zvláštní sekvencí znaků, která začíná symbolem & a končí středníkem. Tyto sekvence nazýváme entitami a používají se nejčastěji pro zobrazení neobvyklých znaků, jakým je například symbol copyrightu (&copy;). Pomocí lze rovněž zapsat neviditelné znaky (např. nedělitelná mezera se zapisuje &nbsp;), případě jimi nahradit znaky, které mají v HTML jiný účel (např. entita &lt; nahrazuje znak < a &gt; znak >).
+
+Struktura stránky
+
+Základní kostru stránky tvoří párové elementy <html>, <head> a <body>. Zatímco element <html>...</html> určuje začátek a konec stránky, element <head>...</head> se používá jako tzv. hlavička stránky a obsahuje informace významné pro nastavení prohlížeče nebo chování vyhledávačů. Viditelný obsah stránky se vepisuje do tzv. těla stránky mezi značky <body>...</body>.
+
+Verze HTML a validátory
+
+Jazyk HTML existuje v několika verzích. Mezi ty starší patří verze HTML 4.01 nebo verze označovaná jako XHTML. V současné době převažuje verze HTML 5, v níž se objevila řada nových a užitečných elementů, naopak některé jiné dříve používané elementy jsou považovány za zastaralé. Většina prohlížečů sice dokáže zobrazit i starší kód HTML, přesto je doporučeno dodržovat pravidla nového standardu HTML 5. K ověření správnosti zadaného HTML kódu můžeme využít tzv. validátor, nejlépe přímo na stránkách konsorcia W3C (https://validator.w3.org), které pod předsednictvím zakladatele Webu Tima Bernerse-Lee dohlíží nad dalším vývojem webových technologií.

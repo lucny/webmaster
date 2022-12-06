@@ -1,0 +1,149 @@
+header {
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0;
+    text-align: center;
+}
+
+header#www-header {
+    background-image: url('../www/www-banner.png');
+}
+
+header#html-header {
+    background-image: url('../html/html-banner.png');
+}
+
+header#css-header {
+    background-image: url('../css/css-banner.png');
+}
+
+main {
+    width: 1200px;
+    margin: auto;
+}
+
+h1, h2, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 300%;
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    background-color: #ddd;
+    color: rgb(26, 60, 110);
+    text-transform: uppercase;
+    border-left: 25px solid rgb(26, 60, 110);
+    padding: 10px 20px;
+    margin-top: 2em;    
+}
+
+h3 {
+    color: rgb(46, 43, 226);
+}
+
+p {
+    text-align: justify;
+    text-indent: 3em;
+}
+
+figure {
+    margin: 40px 0;
+    text-align: center;
+}
+
+figcaption {
+    color: #333;
+}
+
+a.link {
+    color: red;
+    text-decoration: none;
+}
+
+a.link:hover {
+    background-color: red;
+    color: white;
+}
+
+footer {
+    background-color: #ddd;
+    padding-bottom: 20px;
+}
+
+footer p {
+    text-align: center;
+    font-size: .9em;
+    color: #333;
+}
+
+kbd {
+    background-color: #333;
+    color:#ddd;
+    padding: 0 5px;
+}
+
+code {
+    background-color: #ddd;
+}
+
+.web-title {
+    color:cadetblue;
+    text-transform: uppercase;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-container > div {
+    background-color: #666;
+    margin: 10px;
+    padding: 20px;
+    width: 50%;
+}
+
+.flex-container img {
+    width: 100%;
+}
+
+.nav h2 {
+    margin-top: 0;
+    background-color: rgb(43, 67, 79);
+    color: rgb(204, 222, 114);
+    border: none;
+}
+
+.nav {
+    background-color: rgb(204, 222, 114) !important;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 900px) {
+    main {
+      width: 100%;
+    }
+
+    img {
+        max-width: 90%;
+    }
+    .flex-container {
+        flex-direction: column;
+    } 
+    .flex-container > div {
+        width: 90%;
+    }       
+}

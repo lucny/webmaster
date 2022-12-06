@@ -1,0 +1,31 @@
+Dejte stránkám styl
+
+CSS neboli kaskádové styly
+
+Kaskádové styly, známé také pod zkratkou CSS (z anglického Cascading Style Sheets) jsou moderním jazykem umožňujícím účinné formátování HTML stránek. Jazyk CSS byl navržen organizací W3C, jeho zatím poslední verze nese označení CSS3. Hlavním smyslem kaskádových stylů je umožnit návrhářům oddělit vzhled dokumentu od jeho struktury a obsahu.
+
+Pravidla CSS
+
+Základem kaskádových stylů jsou pravidla (rules). Každé pravidlo obsahuje selektor a blok deklarací. Jednotlivé deklarace jsou odděleny středníky. Každou deklaraci tvoří dvojice vlastnost:hodnota.
+
+Díky CSS se na jeden element může navrstvit mnoho různých deklarací (proto jsou styly označovány jako kaskádové), někdy i protichůdných. Platná je zpravidla poslední deklarace, s výjimkou použití příznaku !important za deklarací.
+
+Selektory
+
+Selektory slouží k výběru prvků webové stránky, na které má být aplikováno uvedené pravidlo a deklarace v něm obsažené. V nejnovější verzi CSS3 je k dispozici mnoho různých selektorů, ale nejčastěji se využívají selektory pro výběr HTML elementu podle určité značky (např. h1, p, img), výběr jednoho konkrétního elementu stránky podle jedinečné hodnoty v atributu id (např. #logo), případně výběr více elementů, které mají přiřazenu společnou třídu - class (např. .odsazeny-text). Je možné také pomocí hromadného selektoru vybrat více typů elementů najednou (např. h1, h2, h3) nebo použít tzv. kontextový selektor, kdy pravidlo platí pro jen pro prvky vnořené uvnitř určitého elementu (např. header p - platí jen pro odstavce uvnitř značky header).
+
+Přiřazení stylů k webové stránce
+
+Nejméně vhodným způsobem je přiřadit styly přímo konkrétnímu elementu pomocí atributu style (např. <h1 style=“color: blue; font-style: italic“>To je modrá</h1>). Přicházíme tím však o základní přednost CSS - možnost znovupoužití pravidla pro více elementů. Navíc tímto zápisem značně znepřehledníme samotný HTML kód. Lepší možností je zapisovat pravidla mezi značky <style>...</style> umístěné v hlavičce stránky. Nejlepším řešením je umístit definice stylů do externího textového souboru (nejčastěji s příponou CSS) a tento soubor pak do k dokumentu HTML připojit prostřednictvím značky link: <link rel="stylesheet" href="style.css">. Tímto způsobem lze stejný CSS soubor připojit k libovolnému počtu stránek a snadno udržovat jednotný styl celého webu.
+
+Možnosti využití kaskádových stylů
+
+Pomocí kaskádových stylů můžeme provést prakticky libovolné formátovací úpravy webové stránky. Rozsah možných úprav závisí na použité verzi CSS a schopnostech prohlížečů formátovací příkazy akceptovat. Mezi základní vlastnosti, které byly z větší části k dispozici již v první verzi CSS, patří:
+	
+* Vlastnosti písma - vlastnost font a podřízené vlastnosti, které se připojují za pomlčku - např. font-family, font-size, font-weight atd.)
+* Vlastnosti textu - text-align, text-decoration, text-indent a další.
+* Barvy textu a vlastnosti pozadí - vlastnost color a množina vlastnosti pozadí, např. backgroud-color, background-image, background-repeat atd.
+* Vlastnosti blokových elementů - margin, border, padding, width, height...
+* Vlastnosti spojené se seznamy - list-style-type, list-style-position apod.
+* Způsoby zobrazení prvků - display, visibility, opacity atd.
+* Řízení pozice - position, float, clear, top, bottom, left, right.

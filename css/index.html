@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS</title>
+  <link rel="stylesheet" href="../styles/style.css" />
+</head>
+
+<body>
+  <header id="css-header">
+    <h1><a href="../index.html"><img src="../images/webmaster-logo.png" alt="Webmaster logo"></a> Dejte stránkám styl</h1>
+  </header>
+  <main>
+    <h2 id="kaskadove-styly">CSS neboli kaskádové styly</h2>
+    <p>
+      Kaskádové styly, známé také pod zkratkou <b><abbr title="Cascading Style Sheets">CSS</abbr></b> (z anglického <em>Cascading Style Sheets</em>) 
+      jsou moderním jazykem umožňujícím účinné formátování HTML stránek. Jazyk CSS byl navržen organizací W3C, jeho zatím poslední verze nese
+      označení <b>CSS3</b>. Hlavním smyslem kaskádových stylů je umožnit návrhářům oddělit vzhled dokumentu od jeho struktury a obsahu.
+    </p>
+    <h3>Pravidla CSS</h3>
+    <p>
+      Základem kaskádových stylů jsou <strong>pravidla</strong> (<i>rules</i>). Každé pravidlo obsahuje <strong>selektor</strong> a <strong>blok deklarací</strong>. Jednotlivé
+      deklarace jsou odděleny středníky. Každou deklaraci tvoří dvojice <code>vlastnost:hodnota</code>.
+    </p>
+    <figure>
+      <img src="./css_syntax.webp" alt="CSS syntax" width="500">
+      <figcaption>Syntax CSS</figcaption>
+    </figure>    
+    <p>Díky CSS se na jeden element může navrstvit mnoho různých deklarací (proto jsou styly označovány jako kaskádové),
+      někdy i protichůdných. Platná je zpravidla poslední deklarace, s výjimkou použití příznaku <b>!important</b> za
+      deklarací.</p>
+    <h3>Selektory</h3>
+    <p>
+      Selektory slouží k výběru prvků webové stránky, na které má být aplikováno uvedené pravidlo a deklarace v něm
+      obsažené. V nejnovější verzi CSS3 je k dispozici mnoho různých selektorů, ale nejčastěji se využívají selektory
+      pro výběr HTML elementu podle určité <strong> značky</strong> (např. <code>h1</code>, <code>p</code>, <code>img</code>), výběr jednoho konkrétního elementu stránky podle
+      jedinečné hodnoty v <strong>atributu id</strong> (např. <code>#logo</code>), případně výběr více elementů, které mají přiřazenu společnou třídu
+      - class (např. .odsazeny-text). Je možné také pomocí <strong>hromadného selektoru</strong> vybrat více typů elementů najednou
+      (např. <code>h1, h2, h3</code>) nebo použít tzv. <strong>kontextový selektor</strong>, kdy pravidlo platí pro jen pro prvky vnořené uvnitř
+      určitého elementu (např. <code>header p</code> - platí jen pro odstavce uvnitř značky header).
+    </p>
+    <figure>
+      <img src="./css_selectors.png" alt="Selektory v CSS" width="600">
+      <figcaption>Selektory v CSS</figcaption>
+    </figure>
+    <h2 id="pripojeni">Přiřazení stylů k webové stránce</h2>
+    <p>
+      Nejméně vhodným způsobem je přiřadit styly přímo konkrétnímu elementu pomocí atributu style (např.
+      <code>&lt;h1 style=“color: blue; font-style: italic“&gt;To je modrá&lt;/h1&gt;</code>). Přicházíme tím však o základní přednost
+      CSS - možnost znovupoužití
+      pravidla pro více elementů. Navíc tímto zápisem značně znepřehledníme samotný HTML kód. Lepší možností je
+      zapisovat pravidla mezi
+      značky <code>&lt;style&gt;...&lt;/style&gt;</code> umístěné v hlavičce stránky. Nejlepším řešením je umístit definice stylů do
+      externího textového souboru
+      (nejčastěji s příponou CSS) a tento soubor pak do k dokumentu HTML připojit prostřednictvím značky link:
+      <code>&lt;link rel="stylesheet" href="style.css"&gt;</code>. Tímto způsobem lze stejný CSS soubor připojit k libovolnému počtu
+      stránek a snadno udržovat jednotný styl celého webu.
+    </p>
+    <h2 id="vyuziti-css">Možnosti využití kaskádových stylů</h2>
+    <p>Pomocí kaskádových stylů můžeme provést prakticky libovolné formátovací úpravy webové stránky. Rozsah možných
+      úprav závisí na použité verzi CSS a schopnostech prohlížečů formátovací příkazy akceptovat. Mezi základní
+      vlastnosti, které byly z větší části k dispozici již v první verzi CSS, patří:</p>
+    <ul>
+      <li><b>Vlastnosti písma</b> - vlastnost font a podřízené vlastnosti, které se připojují za pomlčku - např. font-family,
+        font-size, font-weight atd.)</li>
+      <li><b>Vlastnosti textu</b> - text-align, text-decoration, text-indent a další.</li>
+      <li><b>Barvy textu a vlastnosti pozad</b>í - vlastnost color a množina vlastnosti pozadí, např. backgroud-color,
+        background-image, background-repeat atd.</li>
+      <li><b>Vlastnosti blokových elementů</b> - margin, border, padding, width, height...</li>
+      <li><b>Vlastnosti spojené se seznamy</b> - list-style-type, list-style-position apod.</li>
+      <li><b>Způsoby zobrazení prvků</b> - display, visibility, opacity atd.</li>
+      <li><b>Řízení pozice</b> - position, float, clear, top, bottom, left, right.</li>
+    </ul>
+    <figure>
+      <img src="./css_box_model.png" alt="CSS box model" width="600">
+      <figcaption>CSS box model</figcaption>
+    </figure>
+  </main>
+  <footer>
+    <hr />
+    <p>&copy; 2022 - Marek Lučný, Webmaster Junior</p>
+    <p><a href="https://www.sspu-opava.cz"><img src="../images/skola-logo.png" alt="SŠPU Opava"></p>
+  </footer>
+</body>
+
+</html>

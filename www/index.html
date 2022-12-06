@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WWW</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+
+  <body>
+    <header id="www-header">        
+      <h1><a href="../index.html"><img src="../images/webmaster-logo.png" alt="Webmaster logo"></a> Pavučina plná stránek</h1>
+    </header>
+    <main>
+      <h2 id="sluzba-www">Služba WWW</h2>
+      <p>
+        <i>World Wide Web</i> (<abbr title="World Wide Web">WWW</abbr>, také
+        pouze zkráceně web), ve volném překladu „celosvětová pavučina“, je
+        označení pro nejpoužívanější službu v rámci Internetu - dnes
+        všudypřítomné "sítě sítí". Služba se zrodila se v roce 1989 v evropském
+        vědeckém centru CERN v Ženevě díky britskému vědci
+        <b>Timu Berners-Lee</b>.
+      </p>
+      <figure>
+        <img src="./www_tim_berners-lee.jpg" alt="Tim Berners-Lee" />
+        <figcaption>Tim Berners-Lee - zakladatel webu</figcaption>
+      </figure>
+      <h3>Propojené stránky na webových serverech</h3>
+      <p>
+        Základem webu jsou od jeho vzniku textové stránky vzájemně propojené
+        <strong>odkazy</strong> (<em>hyperlinks</em>), díky nimž můžeme
+        libovolně "brouzdat" po stránkách umístěných na nejrůznějších místech v
+        celém světě. Technicky je to zařízeno tak, že stránky i jejich přílohy
+        jsou uloženy na počítačích vybavených speciálními programy označovanými
+        jako <strong>webové servery</strong>. Každý server musí mít svou
+        jedinečnou adresu - v prvé řadě číselnou (tzv.
+        <b><abbr title="Internet Protocol">IP</abbr> adresu</b> - např.
+        <mark>213.155.227.115</mark>), ale kvůli snadnějšímu zapamatování velmi
+        často i jmennou (tzv.
+        <b><abbr title="Domain Name System">DNS</abbr></b> - např.
+        <mark>www.sspu-opava.cz</mark>).
+      </p>
+      <h2 id="url">URL adresy a prohlížeče</h2>
+      <p>
+        Svou adresu má také každá webová stránka a vlastně i každý objekt, který
+        je součástí webu - tedy i obrázek nebo video. Tato jedinečná adresa
+        (např. <a href="https://www.sspu-opava.cz/cs/informacni-technologie/" target="_blank" class="link">https://www.sspu-opava.cz/cs/informacni-technologie/</a>) bývá
+        uváděna zkratkou <abbr title="Uniform Resource Locator">URL</abbr> (<em
+          >Uniform Resource Locator</em
+        >) a potřebujeme ji, když si chceme něco z celosvětové pavučiny
+        zobrazit.
+      </p>
+      <figure>
+        <img src="./www_url.webp" alt="URL" />
+        <figcaption>Struktura URL adresy</figcaption>
+      </figure>
+      <p>
+        Samotné zobrazení obsahu stránek nám umožňují
+        <strong>prohlížeče</strong> neboli <em>browsery</em> (např. Google
+        Chrome, Opera, Safari, Mozilla Firefox, Microsoft Edge a jiné). Odborně
+        jsou tyto aplikace nazývány <strong>webovými klienty</strong>, protože
+        jako elektroničtí "zákazníci" umí využívat služeb webových serverů.
+      </p>
+      <figure>
+        <img src="./www_browsers.jpg" alt="Známé prohlížeče" />
+        <figcaption>Loga známých webových klientů - browserů</figcaption>
+      </figure>
+      <h2 id="http">Protokol HTTP(S)</h2>
+      <p>
+        Komunikace internetových klientů a serverů (a to nejen těch webových)
+        probíhá podle určitých pravidel, které jsou součástí tzv.
+        <strong>protokolu</strong>. Každá internetová služba má své zvláštní
+        protokoly, obvykle pojmenované nějakou tajuplnou zkratkou. V případě
+        služby WWW se používají protokol
+        <b><abbr title="HyperText Transfer Protocol">http</abbr></b> nebo v
+        současnosti jeho bezpečnější verze
+        <b><abbr title="HyperText Transfer Protocol Secure">https</abbr></b
+        >. Díky přísnému dodržování protokolu se může kterýkoliv webový
+        klient na dálku dorozumět s kterýmkoliv webovým serverem na světě.
+      </p>
+      <h3>Požadavky a odpovědi</h3>
+      <ol>
+        <li>
+          Jejich vzdálený rozhovor začíná na straně klienta-prohlížeče tím, že
+          jeho uživatel zadá požadovanou URL adresu webové stránky do adresního
+          řádku svého oblíbeného browseru. Anebo ještě častěji tím, že uživatel
+          klikne na některý z odkazů, který už v sobě má tuto adresu zapsánu.
+        </li>
+        <li>
+          Prostřednictvím Internetu se tento požadavek (<i>request</i>) přenese z
+          klientského počítače na oslovený server.
+        </li>
+        <li>
+          Úkolem webového serveru je klientovi odeslat odpověď (<i>response</i>) a v
+          případě splnitelného požadavku (je-li URL adresa správná a na serveru
+          existuje požadovaná stránka nebo soubor) připojit i požadovaná data,
+          která celosvětovou sítí putují ve formě balíčků plných bitů (packetů).
+        </li>
+        <li>
+          Klient přijaté packety poskládá do původní podoby a zobrazí svému
+          uživateli výsledek v grafické podobě.
+        </li>
+      </ol>
+      <figure>
+        <img src="./www_http.png" alt="Protokol HTTP" />
+        <figcaption>Komunikace webového klienta a serveru prostřednictvím HTTP protokolu</figcaption>
+      </figure>      
+    </main>
+    <footer>
+      <hr />
+      <p>&copy; 2022 - Marek Lučný, Webmaster Junior</p>
+      <p><a href="https://www.sspu-opava.cz"><img src="../images/skola-logo.png" alt="SŠPU Opava"></p>
+    </footer>
+  </body>
+</html>

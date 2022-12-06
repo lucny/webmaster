@@ -1,0 +1,21 @@
+Pavučina plná stránek
+
+Služba WWW
+
+World Wide Web (WWW, také pouze zkráceně web), ve volném překladu „celosvětová pavučina“, je označení pro nejpoužívanější službu v rámci Internetu - dnes všudypřítomné "sítě sítí". Služba se zrodila se v roce 1989 v evropském vědeckém centru CERN v Ženevě díky britskému vědci Timu Berners-Lee.
+
+Propojené stránky na webových serverech
+
+Základem webu jsou od jeho vzniku textové stránky vzájemně propojené odkazy (hyperlinks), díky nimž můžeme libovolně "brouzdat" po stránkách umístěných na nejrůznějších místech v celém světě. Technicky je to zařízeno tak, že stránky i jejich přílohy jsou uloženy na počítačích vybavených speciálními programy označovanými jako webové servery. Každý server musí mít svou jedinečnou adresu - v prvé řadě číselnou (tzv. IP adresu - např. 213.155.227.115), ale kvůli snadnějšímu zapamatování velmi často i jmennou (tzv. DNS - např. www.sspu-opava.cz).
+
+URL adresy a prohlížeče
+
+Svou adresu má také každá webová stránka a vlastně i každý objekt, který je součástí webu - tedy i obrázek nebo video. Tato jedinečná adresa (např. https://www.sspu-opava.cz/cs/informacni-technologie/) bývá uváděna zkratkou URL (Uniform Resource Locator) a potřebujeme ji, když si chceme něco z celosvětové pavučiny zobrazit. Samotné zobrazení obsahu stránek nám umožňují prohlížeče neboli browsery (např. Google Chrome, Opera, Safari, Mozilla Firefox, Microsoft Edge a jiné). Odborně jsou tyto aplikace nazývány webovými klienty, protože jako elektroničtí "zákazníci" umí využívat služeb webových serverů.
+
+Protokol HTTP(S)
+
+Komunikace internetových klientů a serverů (a to nejen těch webových) probíhá podle určitých pravidel, které jsou součástí tzv. protokolu. Každá internetová služba má své zvláštní protokoly, obvykle pojmenované nějakou tajuplnou zkratkou. V případě služby WWW se používají protokol http (HyperText Transfer Protocol) nebo v současnosti jeho bezpečnější verze https (S jako Secure). Díky přísnému dodržování protokolu se může kterýkoliv webový klient na dálku dorozumět s kterýmkoliv webovým serverem na světě. 
+
+Požadavky a odpovědi
+
+Jejich vzdálený rozhovor začíná na straně klienta-prohlížeče tím, že jeho uživatel zadá požadovanou URL adresu webové stránky do adresního řádku svého oblíbeného browseru. Anebo ještě častěji tím, že uživatel klikne na některý z odkazů, který už v sobě má tuto adresu zapsánu. Prostřednictvím Internetu se tento požadavek (request) přenese z klientského počítače na oslovený server. Jeho úkolem je obratem klientovi odeslat odpověď (response) a v případě splnitelného požadavku (je-li URL adresa správná a na serveru existuje požadovaná stránka nebo soubor) připojit i požadovaná data, která celosvětovou sítí putují ve formě balíčků plných bitů (packetů). Klient přijaté packety poskládá do původní podoby a zobrazí svému uživateli výsledek v grafické podobě.

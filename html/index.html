@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+</head>
+
+<body>
+    <header id="html-header">
+        <h1><a href="../index.html"><img src="../images/webmaster-logo.png" alt="Webmaster logo"></a> Tajemný kód webových stránek</h1>
+    </header>
+    <main>
+        <h2 id="jazyk-html">Jazyk HTML</h2>
+        <p>
+            Webovou stránku, kterou nám prohlížeče ukazují ve více či méně úhledné grafické podobě, ve skutečnosti tvoří
+            nepříliš atraktivní text napsaný v tajemném jazyce <b><abbr title="HyperText Markup Language">HTML</abbr></b> (<em>HyperText Markup Language</em>). 
+            Jak naznačuje uvedené anglické vysvětlení zkratky, jde o tzv. značkovací jazyk, který pomocí speciálních značek (anglicky <em>tags</em>),
+            uzavřených mezi symboly <code>&lt;&gt;</code>, blíže určuje význam jednotlivých částí webové stránky. Kupříkladu značka
+            <code>&lt;h1&gt;</code> uvádí hlavní nadpis stránky, značka &lt;p&gt; odstavec a pomocí značky <code>&lt;img&gt;</code> můžeme na
+            stránku vložit obrázek. Kód HTML každé webové stránky si můžeme zobrazit obvykle po kliknutí pravým tlačítkem
+            myši do okna prohlížeče a volbou příkazu Zobrazit zdrojový text z místní nabídky, nebo ještě
+            rychleji klávesovou zkratkou <kbd>CTRL+U</kbd>.
+        </p>
+        <figure>
+            <img src="./html_tags.png" alt="HTML značky" />
+            <figcaption>Značky v jazyce HTML</figcaption>
+        </figure>
+        <h3>Párové a nepárové značky</h3>
+        <p>
+            Většinu elementů stránky tvoří párové značky, protože obklopují určitý textový obsah: např.
+            <code>&lt;h1&gt;Toto je hlavní nadpis stránky&lt;/h1&gt;</code>. Jistě jste si všimli, že ukončovací značka obsahuje
+            navíc lomítko. Mezi nepárové značky patří třeba už zmíněná značka <code>&lt;img&gt;</code> pro zobrazení obrázků nebo
+            značka <code>&lt;hr&gt;</code>, která vykresluje vodorovnou rozdělovací linku. Značky zapisujeme malými písmeny a pomocí
+            odřádkování i odsazování usilujeme o to, aby byl kód HTML co nejpřehlednější.
+        </p>
+        <h3>Atributy</h3>
+        <p>
+            Součástí značek mohou být tzv. <strong>atributy</strong>. Slouží k specifikaci některých důležitých vlastností jednotlivých
+            elementů. Například v případě obrázků je nezbytné v atributu src udat přesnou adresu souboru obrázku (včetně
+            cesty a názvu) a do atributu alt uvést stručný popis obrázku (<code>&lt;img src="/static/img/core-img/skola-logo.png"
+            alt="Logo školy"&gt;</code>). V případě párových elementů píšeme atributy vždy do úvodní značky.
+        </p>
+        <h3>Entity</h3>
+        <p>
+            Na některých místech se v HTML setkáme se zvláštní sekvencí znaků, která začíná symbolem &amp; a končí
+            středníkem. Tyto sekvence nazýváme <strong>entitami</strong> a používají se nejčastěji pro zobrazení neobvyklých znaků, jakým
+            je například symbol copyrightu (&amp;copy;). Pomocí lze rovněž zapsat neviditelné znaky (např. nedělitelná
+            mezera se zapisuje &amp;nbsp;), případě jimi nahradit znaky, které mají v HTML jiný účel (např. entita
+            &amp;lt; nahrazuje znak &lt; a &amp;gt; znak &gt;).
+        </p>
+        <figure>
+            <img src="./html_entities.png" alt="Entity" />
+            <figcaption>Entity - speciální symboly v HTML</figcaption>
+        </figure>
+        <h2 id="struktura">Struktura stránky</h2>
+        <p>Základní kostru stránky tvoří párové elementy <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code> a
+            <code>&lt;body&gt;</code>. Zatímco element <code>&lt;html&gt;...&lt;/html&gt;</code> určuje začátek a konec stránky, element
+            <code>&lt;head&gt;...&lt;/head&gt;</code> se používá jako tzv. <b>hlavička stránky</b> a obsahuje informace významné pro
+            nastavení prohlížeče nebo chování vyhledávačů. Viditelný obsah stránky se vepisuje do tzv. <b>těla stránky</b> mezi
+            značky <code>&lt;body&gt;...&lt;/body&gt;</code>.
+        </p>
+        <figure>
+            <img src="./html_struktura.png" alt="Struktura HTML" />
+            <figcaption>Struktura webové stránky - základní značky HTML</figcaption>
+        </figure>
+        <h2 id="verze">Verze HTML a validátory</h2>
+        <p>Jazyk HTML existuje v několika verzích. Mezi ty starší patří verze <i>HTML 4.01</i> nebo verze označovaná jako
+            <i>XHTML</i>. V současné době převažuje verze <strong>HTML 5</strong>, v níž se objevila řada nových a užitečných elementů, naopak
+            některé jiné dříve používané elementy jsou považovány za zastaralé. Většina prohlížečů sice dokáže zobrazit
+            i starší kód HTML, přesto je doporučeno dodržovat pravidla nového standardu HTML 5. K ověření správnosti
+            zadaného HTML kódu můžeme využít tzv. <strong>validátor</strong>, nejlépe přímo na stránkách konsorcia W3C
+            (<a href="https://validator.w3.org" target="_blank" class="link">https://validator.w3.org</a>), 
+            které pod předsednictvím zakladatele Webu Tima Bernerse-Lee dohlíží nad dalším vývojem webových technologií.</p>
+        <figure>
+            <img src="./html_w3c_logo.jpg" alt="Logo W3C" />
+            <figcaption>Logo konsorcia W3C</figcaption>
+        </figure>
+    </main>
+    <footer>
+        <hr />
+        <p>&copy; 2022 - Marek Lučný, Webmaster Junior</p>
+        <p><a href="https://www.sspu-opava.cz"><img src="../images/skola-logo.png" alt="SŠPU Opava"></p>
+    </footer>
+</body>
+
+</html>
